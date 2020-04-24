@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        list-style: none;
+        li {
+            margin: .9rem;
+            a {
+                text-decoration: none;
+                color: #808080;
+            }
+        }
+    }
+}
+
+.nav-item-active {
+    font-weight: 600;
+}

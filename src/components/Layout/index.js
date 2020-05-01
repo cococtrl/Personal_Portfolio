@@ -1,19 +1,21 @@
-import React from 'react'
+import PropTypes from "prop-types";
+import React from "react";
 
-import Footer from '../Footer'
-import Header from '../Header'
+import Container from "../container";
 
-import '../../styles/reset.scss'
-import styles from './layout.module.scss'
+import "./normalize.css";
+import "./global.css";
 
-export default (props) => {
-    return (
-        <div className={styles.container}>
-            <Header />
-                <main>
-                    {props.children}
-                </main>
-            <Footer />
-        </div>
-    )
-}
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Container>{children}</Container>
+    </div>
+  );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Layout;

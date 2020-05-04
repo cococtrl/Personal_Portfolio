@@ -47,6 +47,7 @@ const IndexPage = () => (
       />
       <Link
         title="Travel Logger"
+        target="_blank"
         link="https://github.com/cococtrl/travel-logger"
         desc="Designed a responsive web application using Python, Django, MongoDB and NodeJS. 
         Application works as a complete CRUD app, allowing the user to keep track of vacations."
@@ -62,6 +63,9 @@ const IndexPage = () => (
         title="Other"
         desc="Amazon Web Services (AWS), API design, Agile / Scrum, Adobe Creative Suite"
       />
+    </Section>
+    <Section>
+    <a href={`Coleman.Resume.pdf`} download>Download Resume</a>
     </Section>
   </Layout>
 );
